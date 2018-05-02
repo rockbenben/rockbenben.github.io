@@ -1,0 +1,35 @@
+language: ruby
+rvm:
+- 2.3.3
+
+before_script:
+# - chmod +x ./script/cibuild # or do this locally and commit
+
+# Assume bundler is being used, therefore
+# the `install` step will run `bundle install` by default.
+install: 
+#- gem install jekyll html-proofer
+- gem install jekyll
+- gem install jekyll-paginate
+
+script: jekyll build #&& htmlproofer ./_site
+
+after_success:
+  - git clone https://github.com/rockbenben/rockbenben.github.io.git
+  - cd rockbenben.github.io && rm -rf * && cp -r ../_site/* .
+  - git config user.name "rockbenben"
+  - git config user.email "qingwhat@gmail.com"
+  - git add --all .
+  - git commit -m "Travis CI Auto Builder"
+  - git push --force https://$DEPLOY_TOKEN@github.com/rockbenben/blog.git master
+
+# branch whitelist, only for GitHub Pages
+branchs:
+  only:
+  - master  #指定只有检测到master分支有变动时才执行任务
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+  
+sudo: false # route your build to the container-based infrastructure for a faster build
