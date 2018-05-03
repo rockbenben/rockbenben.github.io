@@ -24,7 +24,7 @@ after_success:
   - git add --all .
   - git commit -m "Travis CI Auto Builder"
   - git push --force https://$DEPLOY_TOKEN@github.com/rockbenben/blog.git master
-  - ssh root@106.15.190.249 -p 27378 -o StrictHostKeyChecking=no  "docker restart jekyll_blog"  #ssh 连接后，重启 docker 容器, jekyll_blog 为之前设定的容器名。
+  - ssh root@106.15.190.249 -p 27378 -o StrictHostKeyChecking=no  "docker pull rockben/jekyll && docker restart jekyll_blog"  #ssh 连接后，重启 docker 容器, jekyll_blog 为之前设定的容器名。
   # -p 27378 是我自设的服务器端口，默认是22
   #- ssh root@106.15.190.249 -o StrictHostKeyChecking=no 'cd ~/blog-front && git pull && npm install && npm run build'   #使用ssh连接服务器, git pull?
 
