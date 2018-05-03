@@ -26,6 +26,7 @@ after_success:
   - git push --force https://$DEPLOY_TOKEN@github.com/rockbenben/blog.git master
   # Trigger all tags/branchs for this automated build.
   - curl -data '{"build": true}' -X POST https://registry.hub.docker.com/u/rockben/jekyll/trigger/9b1e9527-0cf1-4756-8332-50f8dff37747/
+  - sleep 15m
   - ssh root@106.15.190.249 -p 27378 -o StrictHostKeyChecking=no  "docker restart jekyll_blog"  #ssh 连接后，重启 docker 容器, jekyll_blog 为之前设定的容器名。
   # -p 27378 是我自设的服务器端口，默认是22
   #- ssh root@106.15.190.249 -o StrictHostKeyChecking=no 'cd ~/blog-front && git pull && npm install && npm run build'   #使用ssh连接服务器, git pull?
