@@ -6,7 +6,7 @@ before_script:
 - openssl aes-256-cbc -K $encrypted_5c280379e96c_key -iv $encrypted_5c280379e96c_iv
   -in id_rsa.enc -out ~/.ssh/id_rsa -d      #本句是服务器上的 Travis 自动生成的，但默认生成的命令可能会在/前面带转义符\，我们不需要这些转义符，手动删掉所有的转义符，否则可能在后面引发莫名的错误。
 - chmod 600 ~/.ssh/id_rsa
-- echo -e "Host 106.15.190.249\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+- echo -e "Host 106.15.190.249\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config #106.15.190.249 是服务器IP，修改成你自己的就行
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
@@ -14,7 +14,7 @@ install:
 - gem install jekyll
 - gem install jekyll-paginate
 
-script: jekyll build #&& htmlproofer ./_site
+script: jekyll build #&& htmlproofer ./_site #指定目录容易报错
 
 after_success:
   - git clone https://github.com/rockbenben/rockbenben.github.io.git
@@ -24,11 +24,14 @@ after_success:
   - git add --all .
   - git commit -m "Travis CI Auto Builder"
   - git push --force https://$DEPLOY_TOKEN@github.com/rockbenben/blog.git master
-  - ssh root@106.15.190.249 -p 27378 -o StrictHostKeyChecking=no  "docker restart jekyll_blog"  #ssh 连接后，重启 docker 容器, jekyll_blog 为之前设定的容器名。
+  # Trigger all tags/branchs for this automated build.
+  - curl -X POST https://registry.hub.docker.com/u/rockben/jekyll/trigger/9b1e9527-0cf1-4756-8332-50f8dff37747/ #本句的链接是hub.docker.com 自动生成，进入docker项目后，Building Settings - Build Triggers - Activate Triggers ，复制 Trigger URL
+  - sleep 5m #超过10分钟，tavis 将失去响应。此处是在等待 docker 镜像更新
+  - ssh root@106.15.190.249 -p 27378 -o StrictHostKeyChecking=no "docker pull rockben/jekyll && docker stop jekyll_blog && docker rm jekyll_blog && docker run --name=jekyll_blog -d -p 39100:80 --privileged=true rockben/jekyll:latest"  #ssh 连接后，重启 docker 容器, jekyll_blog 为之前设定的容器名。
   # -p 27378 是我自设的服务器端口，默认是22
   #- ssh root@106.15.190.249 -o StrictHostKeyChecking=no 'cd ~/blog-front && git pull && npm install && npm run build'   #使用ssh连接服务器, git pull?
 
-# branch whitelist, only for GitHub Pages
+# branch whitelist, only for Github Pages
 branchs:
   only:
   - master  #指定只有检测到master分支有变动时才执行任务
