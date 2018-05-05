@@ -1,8 +1,8 @@
 ---
 layout:       post
-title:        "放弃 Github Page,在 VPS 上部署 Jekyll"
+title:        "Jekyll 篇二：自动部署服务器博客"
 subtitle:     ""
-date:         2018-4-30
+date:         2018-5-3
 author:       "Benson"
 header-img:   img/post-bg-20180108.jpg
 header-mask:  0.3
@@ -12,11 +12,11 @@ tags:
     - Travis CI
     - Docker
 ---
-# 放弃 Github Page,在 VPS 上部署 Jekyll
-
-一直都想建立自己的个人博客，重装过 N 次 WordPress，又因为种种原因而放弃。偶然看到了[Hux 的 Jekyll 模板](https://github.com/Huxpro/huxpro.github.io)，被漂亮的设计给迷住了，开始了 Jekyll 之路。
+# Jekyll 篇二：自动部署服务器博客
 
 Github 上搭建 Jekyll 是最方便的，空间免费、流量免费、部署简单。但 Github 属于被墙状态，将博客部署在那，速度实在太慢。在玩了几天后，我开始在服务器上直接搭建 Jekyll 博客。
+
+服务器搭建需要人工执行`jekyll build`, 完全背离了最开始搭建博客的初衷-**方便**。之后结合了网络上多个自动化方案，选定入门成本最低的 `Github` -> `Travis CI` -> `Docker`-> `VPS`。
 
 
 
@@ -225,8 +225,6 @@ Commit all changes to your .travis.yml.
 
 
 
-
-
 ## 六、.travis.yml 配置
 
 当项目内存在 `.travis.yml` 文件时，Travis CI 会按照其定义完成自动 build 过程，所以开启了上述配置以后还要在 Github 的 Jekyll 源文件项目下创建 `.travis.yml` 配置文件
@@ -290,21 +288,22 @@ sudo: false # route your build to the container-based infrastructure for a faste
 
 参考资料&引用：
 
-1. [Jekyll 模板 hux blog](https://github.com/Huxpro/huxpro.github.io)
-2. [一点都不高大上，手把手教你使用Travis CI实现持续部署](https://zhuanlan.zhihu.com/p/25066056)
+* [Jekyll 模板 hux blog](https://github.com/Huxpro/huxpro.github.io)
 
-[Jekyll + Travis CI 自动化部署博客](https://mritd.me/2017/02/25/jekyll-blog-+-travis-ci-auto-deploy/)
+* [一点都不高大上，手把手教你使用Travis CI实现持续部署](https://zhuanlan.zhihu.com/p/25066056)
 
-[Travis-CI自动化测试并部署至自己的CentOS服务器](https://juejin.im/post/5a9e1a5751882555712bd8e1)
+* [Jekyll + Travis CI 自动化部署博客](https://mritd.me/2017/02/25/jekyll-blog-+-travis-ci-auto-deploy/)
 
-[Travis CI 系列：自动化部署博客](https://segmentfault.com/a/1190000011218410)
+* [Travis-CI自动化测试并部署至自己的CentOS服务器](https://juejin.im/post/5a9e1a5751882555712bd8e1)
 
-[SSH 免密登录远程服务器](https://juejin.im/post/5a2941ad6fb9a045030ffc95)
+* [Travis CI 系列：自动化部署博客](https://segmentfault.com/a/1190000011218410)
 
-[SSH公钥登录原理](http://www.cnblogs.com/scofi/p/6617394.html)
+* [SSH 免密登录远程服务器](https://juejin.im/post/5a2941ad6fb9a045030ffc95)
 
-[如何将dockerhub与github关联](https://blog.csdn.net/yinweitao12/article/details/73165914)
+* [SSH公钥登录原理](http://www.cnblogs.com/scofi/p/6617394.html)
 
-[docker 启动，端口映射，挂载本地目录](http://www.cnblogs.com/YasinXiao/p/7736075.html)
+* [如何将dockerhub与github关联](https://blog.csdn.net/yinweitao12/article/details/73165914)
 
-[Docker — 从入门到实践](https://yeasy.gitbooks.io/docker_practice/)
+* [docker 启动，端口映射，挂载本地目录](http://www.cnblogs.com/YasinXiao/p/7736075.html)
+
+* [Docker — 从入门到实践](https://yeasy.gitbooks.io/docker_practice/)
