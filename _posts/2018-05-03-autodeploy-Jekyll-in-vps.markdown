@@ -265,6 +265,7 @@ after_success:
   - sleep 5m #超过10分钟，tavis 将失去响应。此处是在等待 docker 镜像更新
   - ssh root@106.15.190.249 -p 27378 -o StrictHostKeyChecking=no "docker pull rockben/jekyll && docker stop jekyll_blog && docker rm jekyll_blog && docker run --name=jekyll_blog -d -p 39100:80 --privileged=true rockben/jekyll:latest"  #ssh 连接后，重启 docker 容器, jekyll_blog 为之前设定的容器名。
   # -p 27378 是我自设的服务器端口，默认是22
+  # - ssh root@106.15.190.249 -p 27378 -o StrictHostKeyChecking=no "/www/wwwroot/jekyll_build.sh" #执行 jekyll 重建脚本
   #- ssh root@106.15.190.249 -o StrictHostKeyChecking=no 'cd ~/blog-front && git pull && npm install && npm run build'   #使用ssh连接服务器, git pull?
 
 # branch whitelist, only for Github Pages
