@@ -14,7 +14,6 @@ tags:
 
 电视 + 机顶盒 + IPTV 盒，家里的遥控器越来越多。为了摆脱众多的遥控器，开始使用 lucifersun 的直播源（原理上**仅限上海电信**）。
 
-
 lucifersun 抓取了[上海电信 IPTV 视频回放源](https://github.com/lucifersun/China-Telecom-ShangHai-IPTV-list)。借助直播源地址，我们可以在 PC 、电视、手机上直接看电视直播。
 > 这个播放列表使用IPTV的频道 回放 功能。IPTV直播用的是专网组播，无法直接通过Internet播放。
 因为不是所有频道都支持回放，所以这个列表里的频道 必然少于 IPTV的直播频道。
