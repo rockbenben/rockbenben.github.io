@@ -24,7 +24,9 @@ iptables -t nat -I PREROUTING -d 110.110.110.110 -p tcp --dport 80 -j REDIRECT -
 ```
 ![](http://tc.seoipo.com/20180610143928.png)
 
-设置完成后，就可以下载 https 证书，之后的设置参考[Merlin版Koolproxy3.1.x使用教程](http://koolshare.cn/thread-80430-1-1.html)
+运行命令后，就可以下载 https 证书，之后的设置参考[Merlin版Koolproxy3.1.x使用教程](http://koolshare.cn/thread-80430-1-1.html)
+
+保存 Koolproxy 设置后，一定要**重启路由**，否则可能部分屏蔽设置未成功生效。
 
 参考资料：
 解决办法感谢C大，http://koolshare.cn/thread-81712-1-1.html
