@@ -1,6 +1,6 @@
-#Hux Blog
+# Hux Blog
 
-###[View Live Hux Blog &rarr;](https://huangxuan.me)
+### [View Live Hux Blog &rarr;](https://huangxuan.me)
 
 ![](http://huangxuan.me/img/blog-desktop.jpg)
 
@@ -26,45 +26,64 @@ $ git clone git@github.com:Huxpro/huxblog-boilerplate.git
 
  - ![cn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png) **Chinese (Simplified)**: 感谢 [@BrucZhaoR](https://github.com/BruceZhaoR) 的 [中文翻译 &rarr;](https://github.com/Huxpro/huxpro.github.io/blob/master/README.zh.md)
 
-## Features
+## Releases
 
-##### New Feature (V1.5.2)
+##### V1.8
+
+- Brand new [Archive](https://huangxuan.me/archive/) page! Which is not just serving as common archive page but also Tag page where all posts are filter-able with tags!
+Thanks [@kitian616/jekyll-TeXt-theme](https://github.com/kitian616/jekyll-TeXt-theme) to bring this brilliant idea. Noted that the old Tag page and Archive page are deprecated but the new archive's totally backward compatiable.
+- Re-engineering of the blog by extracting duplicated liquid templates. This was proposed in #74 by @Kaijun but postponed for entirely 2.5 years! I wasn't able to merge his PR directly because of long-time divegence but I'd love to give him the full credit! 
+- New code block! Long-wanted line number are supported out of the box now (thanks for @SmilingParadise's help on Sina Weibo) and the theme was updated to Atom One Dark (checkout FQA for how to change to your farovite theme)
+- MathJax support by @Voleking in #80, but I choose the SVG renderer. See [Mathjax, kramdown and Octopress](https://www.lucypark.kr/blog/2013/02/25/mathjax-kramdown-and-octopress/) for writing and escaping details.
+- Open Graph Protocol support by @Android-KitKat in #253
+- `header-img-credit` and `header-img-credit-href`
+- `nav-style: invert` and `header-style: text`
+
+##### V1.7
+
+- PWA / Service Worker
+
+##### v1.6
+
+- change cdn to cdnjs for better HTTPS support
+
+##### V1.5.2
 
 - Annoyed to delete my blog post after clone or pull? **Boilerplate** comes to help you get started quickly and easily merge update.
 - `-apple-system` is added in font rule, which display beautiful new font **San Francisco** in iOS 9 by default.
 - Fixed [issue#15](https://github.com/Huxpro/huxpro.github.io/issues/15) about code wrap.
 
-##### New Feature (V1.5.1)
+##### V1.5.1
 
 - **[Comment](#comment)** support [**Disqus**](http://disqus.com) officially, thanks to @rpsh.
 
-##### New Feature (V1.5)
+##### V1.5
 
 - **[Comment](#comment)** and **[Analytics](#analytics)** is configurable now! We also add **Google Analytics support** and drop tencents. Both documents is updated.
 
-##### New Feature (V1.4)
+##### V1.4
 
 - **[Featured Tags](#featured-tags)** is now independent of [SideBar](#sidebar). Both documents is updated.
 - New **[SEO Title](#seo-title)** for SEO usage which is differ from the site title
 
-##### New Feature (V1.3.1)
+##### V1.3.1
 
 - Support **PingFang (苹方)**, the new Chinese font presented by [OS X El Capitan](http://www.apple.com/cn/osx/whats-new/)
 
 
-##### New Feature (V1.3)
+##### V1.3
 
 - Big Improvement to the **Navigation Menu** *(especially in Android)*:  Dropping the old, stuttering, low-performance [Bootstrap collapse.js](http://getbootstrap.com/javascript/#collapse),  replaced with an own wrote, [jank free](http://jankfree.org/) navbar menu in a pretty high-performance implementation of [Google Material Design](https://www.google.com/design/spec/material-design/introduction.html).
 
 <img src="http://huangxuan.me/img/blog-md-navbar.gif" width="320" />
 
 
-##### New Feature (V1.2)
+##### V1.2
 
 - Brand new **[Keynote Layout](#keynote-layout)** is provided for easily posting beautiful HTML presentations you have created with this blog
 
 
-##### New Feature (V1.1)
+##### V1.1
 
 - We now support a clean and gorgeous **[SideBar](#sidebar)** for displaying more info
 - **[Friends](#friends)** is also added as a common feature of blog help you do SEO
@@ -107,6 +126,7 @@ $ git clone git@github.com:Huxpro/huxblog-boilerplate.git
 	* [Header Image](#header-image)
 	* [SEO Title](#seo-title)
 	* [Page Build Warning](#page-build-warning)
+* FAQ
 
 #### Environment
 
@@ -309,6 +329,23 @@ One of these is that github changes its build environment.
 So, just edit `_config.yml`, find `highlighter: pygments`, change it to `highlighter: rouge` and the warning will be gone.
 
 For other circumstances, check out existing issues or create a new one!
+
+## FAQ
+
+#### How can I customize the theme of code block?
+
+This theme uses the default code syntax highlighter of jekyll, "rouge, which is compatible with Pygments theme so just pick any pygments theme css (e.g. from [here](http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html) and replace the content of `highlight.less`.
+
+#### cannot load such file -- jekyll-paginate
+
+Executing this command to install this plugin:
+
+```
+$ gem install jekyll-paginate 
+```
+
+This blog started in Jekyll 2 time when `jekyll-paginate` is standard. With Jekyll 3, it's a plugin we included in `_config.yml`.
+
 
 ## License
 

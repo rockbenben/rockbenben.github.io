@@ -109,6 +109,8 @@ WORKDIR /usr/share/nginx/html
 然后在服务器上执行下列代码，拉取并**启动 Docker 镜像**
 ```
 docker pull rockben/jekyll
+docker stop jekyll_blog
+docker rm jekyll_blog
 docker run --name=jekyll_blog -d -p 39100:80 --privileged=true rockben/jekyll:latest
 ```
 --name=jekyll_blog 中的 `jekyll_blog`是对容器的命名，方便后续操作
