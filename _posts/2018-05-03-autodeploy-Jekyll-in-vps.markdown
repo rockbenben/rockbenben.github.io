@@ -106,15 +106,19 @@ WORKDIR /usr/share/nginx/html
 然后在`Building Settings - Build Triggers - Activate Triggers` ，复制 Trigger URL
 ![](http://tc.seoipo.com/20180504161245.png)
 
-然后在服务器上执行下列代码，拉取并**启动 Docker 镜像 **
+然后在服务器上执行下列代码，拉取并**启动 Docker 镜像**
 ```
 docker pull rockben/jekyll
 docker run --name=jekyll_blog -d -p 39100:80 --privileged=true rockben/jekyll:latest
 ```
 --name=jekyll_blog 中的 `jekyll_blog`是对容器的命名，方便后续操作
+
 -d 让容器在后台运行。
+
 -p 映射端口: 80 是容器内对应的端口，39100 是主机端口，也就是最终用户访问的端口，本端口可以自由选择。
+
 --privileged=true 关闭安全权限，否则你容器操作文件夹没有权限
+
 --`rockben/jekyll:latest`是容器名称, 可省略 `:latest`
 
 运行容器后，访问 `seoipo.com:39100 `就可以看到镜像网页。如果每次用端口访问，可以在域名 DNS 中设置显性URL，将二级域名 `blog.seoipo.com` 指向 `seoipo.com:39100`
