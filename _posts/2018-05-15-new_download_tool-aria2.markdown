@@ -104,6 +104,16 @@ AriaNg 和传统下载软件界面类似，中文版界面，使用无压力，�
 
 
 
+## Aria2 启动器
+Aria2 启动需要分别打开下载界面和 exe 应用文件，比较麻烦。我用 ahk 做了个启动器，可以检测 exe 应用运行状态并一键打开下载界面。
+启动器下载：https://www.seoipo.com/software/Aria2_start.zip
+
+将启动器到 Aria2 运行目录，如`D:\Aria2`。
+
+**Aria2c启动器**：使用`http://aria2c.com/`作为默认下载界面，不需要多余设置。
+**AriaNg启动器**：使用 AriaNg 作为下载界面，需将 AriaNg 解压到 Aria2 运行目录，如`D:\Aria2\AriaNg`。
+
+
 
 参考资料：
 1. [aria2 懒人安装教程](https://www.appinn.com/aria2-in-windows-setup/)

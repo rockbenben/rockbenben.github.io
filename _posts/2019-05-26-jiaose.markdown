@@ -1,0 +1,24 @@
+---
+layout:       post
+title:        "屏幕校色"
+subtitle:     ""
+date:         2019-05-26
+author:       "Benson"
+header-img:   img/post-bg-20180108.jpg
+header-mask:  0.3
+catalog:      true
+tags:
+    - rss
+    - rsshub
+---
+# 屏幕校色
+
+校色工具：爱色丽（X-Rite）i1 Display Pro
+校色软件：Dispaly Cal
+
+环境灯光，在平常环境下即可。
+
+白点色温：6500 K
+白电平：120 cd/m
+
+<img src="http://tc.seoipo.com/20190526105110.png"/>

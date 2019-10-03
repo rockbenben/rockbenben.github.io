@@ -1,0 +1,33 @@
+---
+layout:       post
+title:        "keepass"
+subtitle:     ""
+date:         2019-10-2
+author:       "Benson"
+header-img:   img/post-bg-20180108.jpg
+header-mask:  0.3
+catalog:      true
+tags:
+    - keepass
+---
+# keepass
+
+Keepass 原版比 keepassxc 复杂，但配置性更强。
+
+## 配置
+
+* 最小化到系统盘
+* 关闭按钮最小化主窗口
+
+
+
+## 插件
+
+### [keepasshttp](https://github.com/pfn/keepasshttp/)
+插件下载：https://raw.github.com/pfn/keepasshttp/master/KeePassHttp.plgx
+下载后，将插件放入指定文件夹，重启 keepass 后生效。
+
+### [KPEnhancedEntryView](https://keepass.info/plugins.html#kpenhentryview)
+KPEnhancedEntryView 增强视觉效果，为达到最佳显示效果，按以下配置：
+* 在主界面中点击【显示】→【窗口布局】→【平铺】；
+* 在主界面中点击【显示】→【列设置】，只选择：标题→【确定】。大家也可以按自己要求选择。
