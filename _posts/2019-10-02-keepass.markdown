@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "keepass"
+title:        "替代 Lastpass - keepass"
 subtitle:     ""
 date:         2019-10-2
 author:       "Benson"
@@ -10,9 +10,9 @@ catalog:      true
 tags:
     - keepass
 ---
-# keepass
+# 替代 Lastpass - keepass
 
-Keepass 原版比 keepassxc 复杂，但配置性更强。
+Lastpass 自动输入功能持续变弱，决定加入自动输入超强的 Keepass。Keepass 原版比 keepassxc 复杂，但配置性更强。
 
 ## 配置
 
@@ -31,3 +31,13 @@ Keepass 原版比 keepassxc 复杂，但配置性更强。
 KPEnhancedEntryView 增强视觉效果，为达到最佳显示效果，按以下配置：
 * 在主界面中点击【显示】→【窗口布局】→【平铺】；
 * 在主界面中点击【显示】→【列设置】，只选择：标题→【确定】。大家也可以按自己要求选择。
+
+### [KP Entry Templates](https://github.com/mitchcapper/KPEntryTemplates)
+
+配置方法：
+
+1. 点击keepass主界面的【文件】→【数据库设置】→【高级】，在【模板记录组】中选择一个群组→【确定】；
+2. 返回主界面，点击步骤1中选择的群组，按Ctrl+I键（或点击上方工具栏的钥匙图标）添加记录；
+3. 点击【自动输入】，勾选【双通道自动输入混淆】（**以后用模板添加记录时就不需要再勾选，一劳永逸**）；
+4. 点击最左边的【Template】→【Init As Template】；
+5. 配置所需模板→【确定】。
