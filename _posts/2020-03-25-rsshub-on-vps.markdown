@@ -17,7 +17,7 @@ RSSHub 使用非常简单，但随着使用者增多，微博、知乎加大了�
 
 新手使用 RSSHub 部署教程报错较多，本篇将使用宝塔 PM2 管理器进行部署。
 
-## 部署步骤：
+## 部署步骤
 
 1. 将 rsshub 代码下载到根目录 /root/
 ```
@@ -35,7 +35,7 @@ git clone https://github.com/DIYgod/RSSHub.git
 
 ![](http://tc.seoipo.com/20200325121921.png)
 
-## 使用步骤：
+## 使用步骤
 
 1. 打开 [RSSHub 接口指南](https://docs.rsshub.app/)，搜索需要订阅的网站。RSSHub 支持国内大部分的主流网站。
 
@@ -47,5 +47,3 @@ git clone https://github.com/DIYgod/RSSHub.git
 
 * RSSHub 使用简单，使用现成的抓取规则，适用于国内主流网站；但无法抓取对小众网站，必须 RSSHub 官方定制订阅源。
 * Huginn 适用于所有网站，可设定抓取频率、内容结构、js结果、输出样式等；但部署、配置复杂，入门门槛高，需要针对网站单独定制抓取规则。
-
-
