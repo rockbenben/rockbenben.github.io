@@ -17,11 +17,19 @@ Lastpass 自动输入功能持续变弱，决定加入自动输入超强的 Keep
 ## 配置
 
 * 最小化到系统盘
+
 * 关闭按钮最小化主窗口
-* 自动输入规则修改`^+1{CLEARFIELD}{USERNAME}{TAB}{PASSWORD}%+0{ENTER}`
-^+0即 Ctrl+Shift+1 切换为英文输入法、清空已有内容并自动输入用户名、自动输入密码、%+0 即 Alt+Shift+0 切换为中文输入法、 {ENTER} 按回车进入目标应用。该规则可以修复中文输入法无法正确输出问题，但需要安装纯英文输入法；然后设置中、英文输入法的激活热键，下图红框内第一个为英文输入法，第二个是常用的中文输入法：
-![](http://tc.seoipo.com/20191016230117.png)
-建议关闭「在输入语言之间」的按键顺序，防止语言切换出错。
+
+* 自动输入规则修改`^+1{CLEARFIELD}{USERNAME}{TAB}{PASSWORD}^,{ENTER}`
+  ^+0即 Ctrl+Shift+1 切换为英文输入法、清空已有内容并自动输入用户名、自动输入密码、^, 即 Ctrl+, 切换为中文输入法、 {ENTER} 按回车进入目标应用。该规则可以修复中文输入法无法正确输出问题，但需要安装纯英文输入法；然后设置中、英文输入法的激活热键。
+
+  下图红框内第一个为英文输入法，第二个是常用的中文输入法：
+  ![](http://tc.seoipo.com/20191016230117.png)
+  关闭「在输入语言之间」的按键顺序，防止语言切换出错。
+
+  搜狗输入法的输入法管理器会自动修改输入法快捷键，因此中文快捷键使用`Ctrl + ,`。
+
+  ![](http://tc.seoipo.com/20191220095133.png)
 
 ## 进阶
 使用中遇到几个问题
@@ -42,7 +50,9 @@ Lastpass 自动输入功能持续变弱，决定加入自动输入超强的 Keep
 
 ### [keepassnatmsg](https://github.com/smorks/keepassnatmsg)
 浏览器插件 KeePassHttp-Connector 已经不再更新。使用 keepassnatmsg 后，可连接 KeePassXC-Browser 连接浏览器。
-> Chrome、Firefox 都支持该方法，但搜狗浏览器不支持，只能继续使用 KeePassHttp-Connector。
+> 搜狗浏览器不支持，只能继续使用 KeePassHttp-Connector。
+>
+> 如果报错「proxy download error」，备份并删除文件夹  C:\Users\%Username%\AppData\Local\KeePassNatMsg，然后重新加载 Native Messaging Host
 
 ### [KPEnhancedEntryView](https://keepass.info/plugins.html#kpenhentryview)
 KPEnhancedEntryView 增强视觉效果，为达到最佳显示效果，按以下配置：

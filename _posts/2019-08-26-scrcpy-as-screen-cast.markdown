@@ -16,7 +16,7 @@ tags:
 
 项目地址：https://github.com/Genymobile/scrcpy
 
-Windows 下载：[`scrcpy-win64-v1.10.zip`](https://github.com/Genymobile/scrcpy/releases/download/v1.10/scrcpy-win64-v1.10.zip)
+Windows 下载：[`scrcpy-win64-v1.12.zip`](https://github.com/Genymobile/scrcpy/releases/download/v1.12/scrcpy-win64-v1.12.zip)
 
 电脑端完成配置后，我们还需要在手机端开启 `开发者选项` 及 `USB 调试`。然后使用数据线将手机和电脑连接并允许 USB 调试，即可双击解压得到的 **scrcpy.exe** 文件进行有线投屏了。
 
@@ -25,12 +25,12 @@ Windows 下载：[`scrcpy-win64-v1.10.zip`](https://github.com/Genymobile/scrcpy
 2. 打开 PowerShell (~ cmd)，依次操作并输入代码
 ```
 # a.将代码目录定位到 scrcpy 文件夹
-cd D:\Libraries\Desktop\scrcpy-win64-v1.10
+cd D:\Libraries\Desktop\scrcpy-win64-v1.12
 
 # b.在手机端开启「开发者选项」及「USB 调试」，然后使用数据线将手机和电脑连接并允许 USB 调试，开启手机端口
 .\adb tcpip 5555
 
-# c.拔出手机数据线，开启无线链接。(192.168.2.234 为手机端 ip，可更改)
+# c.拔出手机数据线，开启无线链接。(192.168.2.234 为手机端 ip，需更改)
 .\adb connect 192.168.2.234:5555
 
 # d.启动 scrcpy.exe
@@ -43,7 +43,7 @@ cd D:\Libraries\Desktop\scrcpy-win64-v1.10
 打开 PowerShell (~ cmd)，依次操作并输入代码
 ```
 # 将代码目录定位到 scrcpy 文件夹
-cd D:\Libraries\Desktop\scrcpy-win64-v1.10
+cd D:\Libraries\Desktop\scrcpy-win64-v1.12
 
 # 开始录制，录屏文件会以命令指定的文件名自动保存在当前文件夹内。
 .\scrcpy -r filename.mp4

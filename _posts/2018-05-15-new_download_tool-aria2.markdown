@@ -37,7 +37,9 @@ tags:
 
 **2、把懒人包解压到常用的存放目录，我放在 `D:\Aria2`**
 
-**3、官网下载 [Aria2 程序](https://github.com/aria2/aria2/releases), 解压到懒人包目录中，会替代懒人包的 `aria2c.exe` 程序**
+**3、官网下载 [Aria2 程序](https://github.com/aria2/aria2/releases), Win10 系统选择 [aria2-1.35.0-win-64bit-build1.zip](https://github.com/aria2/aria2/releases/download/release-1.35.0/aria2-1.35.0-win-64bit-build1.zip)，然后解压到懒人包目录中，替代懒人包的 `aria2c.exe` 程序**
+
+![](http://tc.seoipo.com/20191210232831.png)
 
 **4、点击 `aria2.exe` , 启动 aria2, 该程序会在任务栏中植入图标**
 
@@ -69,7 +71,7 @@ enable-peer-exchange=true
 
 ```
 # bt-tracker 更新，解决Aria2 BT下载速度慢没速度的问题
-bt-tracker=udp://62.138.0.158:6969/announce,udp://87.233.192.220:6969/announce,udp://111.6.78.96:6969/announce,udp://90.179.64.91:1337/announce,udp://51.15.4.13:1337/announce,udp://151.80.120.113:2710/announce,udp://191.96.249.23:6969/announce,udp://35.187.36.248:1337/announce,udp://123.249.16.65:2710/announce,udp://210.244.71.25:6969/announce,udp://78.142.19.42:1337/announce,udp://173.254.219.72:6969/announce,udp://51.15.76.199:6969/announce,udp://51.15.40.114:80/announce,udp://91.212.150.191:3418/announce,udp://103.224.212.222:6969/announce,udp://5.79.83.194:6969/announce,udp://92.241.171.245:6969/announce,udp://5.79.209.57:6969/announce,udp://82.118.242.198:1337/announce
+bt-tracker=udp://tracker.coppersurfer.tk:6969/announce,udp://tracker.leechers-paradise.org:6969/announce,udp://tracker.opentrackr.org:1337/announce,udp://p4p.arenabg.com:1337/announce,udp://9.rarbg.to:2710/announce,udp://9.rarbg.me:2710/announce,udp://tracker.openbittorrent.com:80/announce,udp://exodus.desync.com:6969/announce,udp://tracker.tiny-vps.com:6969/announce,udp://retracker.lanta-net.ru:2710/announce,udp://open.stealth.si:80/announce,udp://tracker.moeking.me:6969/announce,udp://denis.stalker.upeer.me:6969/announce,udp://tracker.torrent.eu.org:451/announce,udp://tracker.cyberia.is:6969/announce,udp://open.demonii.si:1337/announce,udp://ipv4.tracker.harry.lu:80/announce,udp://explodie.org:6969/announce,udp://xxxtor.com:2710/announce,udp://valakas.rollo.dnsabr.com:2710/announce
 ```
 
 还有很多设置，有时间可以逐个修改。
