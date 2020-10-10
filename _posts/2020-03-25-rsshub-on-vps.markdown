@@ -31,7 +31,7 @@ git clone https://github.com/DIYgod/RSSHub.git
 
 ![](http://tc.seoipo.com/20200325121639.png)
 
-添加后，点击项目中的「映射」，输入指定域名，如 rsshub.xxx.com 。映射域名需解析到服务器 IP。
+添加后，点击项目中的「映射」，输入指定域名，如 rsshub.xxx.com ，服务器的 1200 端口将指向该域名。映射域名需解析到服务器 IP。
 
 ![](http://tc.seoipo.com/20200325121921.png)
 

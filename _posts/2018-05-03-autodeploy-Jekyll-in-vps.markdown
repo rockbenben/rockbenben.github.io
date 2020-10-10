@@ -30,8 +30,6 @@ Github 上搭建 Jekyll 是最方便的，空间免费、流量免费、部署�
 
 
 
-
-
 ## 一、Travis CI 基本配置
 
 Travis CI 对于开源项目完全免费，并且能自动感知到 Github 的 commit，帮我们解决了静态文件生成问题。
