@@ -35,6 +35,10 @@ git clone https://github.com/DIYgod/RSSHub.git
 
 ![](http://tc.seoipo.com/20200325121921.png)
 
+程序运行，有时会报错，也可以直接用命令运行 pm2 `pm2 start /root/RSSHub/lib/index.js --name rsshub`。
+
+
+
 ## 使用步骤
 
 1. 打开 [RSSHub 接口指南](https://docs.rsshub.app/)，搜索需要订阅的网站。RSSHub 支持国内大部分的主流网站。

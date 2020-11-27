@@ -30,14 +30,10 @@ tags:
 小狼毫切换为英文状态，输入法依然需要确认，是否有办法解决？
 
 ## 进阶指南
-官方定制指南：https://github.com/rime/home/wiki/CustomizationGuide
-文件信息说明：https://github.com/rime/home/wiki/RimeWithSchemata#rime-%E4%B8%AD%E7%9A%84%E6%95%B8%E6%93%9A%E6%96%87%E4%BB%B6%E5%88%86%E4%BD%88%E5%8F%8A%E4%BD%9C%E7%94%A8
+官方文档：[定制指南](https://github.com/rime/home/wiki/CustomizationGuide)、[文件配置说明](https://github.com/rime/home/wiki/RimeWithSchemata#rime-%E4%B8%AD%E7%9A%84%E6%95%B8%E6%93%9A%E6%96%87%E4%BB%B6%E5%88%86%E4%BD%88%E5%8F%8A%E4%BD%9C%E7%94%A8)、[emoji 集成](https://github.com/rime/rime-emoji)、[模糊音设置](https://github.com/rime/home/wiki/CustomizationGuide#%E6%A8%A1%E7%B3%8A%E9%9F%B3)、
+扩充词库：[自定义短语](https://gist.github.com/lotem/5440677)、[Rime 擴充詞庫](https://github.com/rime-aca/dictionaries)
 
 * [同步用户资料](https://github.com/rime/home/wiki/UserGuide#%E5%90%8C%E6%AD%A5%E7%94%A8%E6%88%B6%E8%B3%87%E6%96%99)：打开用户文件夹中的`installation.yaml`，将设备名称`installation_id`从长字符串修改为方便识别的名称，并在文件最下方添加`sync_dir: 'D:\Sync\RIME'`，此处为用户资料同步位置。注意：同步文件夹路径中不能出现中文。
-* emoji 集成：https://github.com/rime/rime-emoji
-* 模糊音设置：https://github.com/rime/home/wiki/CustomizationGuide#%E6%A8%A1%E7%B3%8A%E9%9F%B3
-* 自定义短语：https://gist.github.com/lotem/5440677
-* Rime 擴充詞庫：https://github.com/rime-aca/dictionaries
 
 如果要兼具英文联想、网络流行语、成语、俗语等，可使用下列词库
 * BetterRime 词库：https://github.com/Chernfalin/better-rime-dict
