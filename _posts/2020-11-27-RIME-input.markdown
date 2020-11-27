@@ -2,7 +2,7 @@
 layout:       post
 title:        "小狼毫 3 分钟入门及进阶指南"
 subtitle:     "终极输入法"
-date:         2020-09-15
+date:         2020-11-27
 author:       "Benson"
 header-img:   img/post-bg-20180108.jpg
 header-mask:  0.3
@@ -19,18 +19,18 @@ tags:
 之后尝试各类输入法，百度、讯飞、手心等依旧是键盘记录器，影子输入法开源但不够稳定，谷歌拼音停止更新，微软拼音词库收录慢且难以转移。唯有小狼毫开源，且方便多设备同步词库。
 
 小狼毫官网下载：https://dl.bintray.com/rime/weasel/weasel-0.14.3.0-installer.exe
+
 国内搬运：https://www.lanzoux.com/ipfdfglhs8f
 
-安装时注意不要修改用户文件夹位置，后续定制输入法容易出错。
+安装时建议不要修改用户文件夹位置，后续定制输入法容易出错。
 
-安装完成，右键点击任务栏小狼毫图标，选「输入法设定」，只勾选一个「朙月拼音·简化字」，再选一个喜欢的皮肤就好。
+安装完成后，右键点击任务栏小狼毫图标，选「输入法设定」，只勾选一个「朙月拼音·简化字」，再选一个喜欢的皮肤就好。
 
 现在已经可以正常使用小狼毫输入法了。如果想要更完美的输入法，可以继续查看进阶指南。进阶前，右键点击任务栏小狼毫图标，选「用户文件夹」，新建 `luna_pinyin_simp.custom.yaml`(此方案为「朙月拼音·简化字」)。
 
-小狼毫切换为英文状态，输入法依然需要确认，是否有办法解决？
-
 ## 进阶指南
-官方文档：[定制指南](https://github.com/rime/home/wiki/CustomizationGuide)、[文件配置说明](https://github.com/rime/home/wiki/RimeWithSchemata#rime-%E4%B8%AD%E7%9A%84%E6%95%B8%E6%93%9A%E6%96%87%E4%BB%B6%E5%88%86%E4%BD%88%E5%8F%8A%E4%BD%9C%E7%94%A8)、[emoji 集成](https://github.com/rime/rime-emoji)、[模糊音设置](https://github.com/rime/home/wiki/CustomizationGuide#%E6%A8%A1%E7%B3%8A%E9%9F%B3)、
+官方文档：[定制指南](https://github.com/rime/home/wiki/CustomizationGuide)、[文件配置说明](https://github.com/rime/home/wiki/RimeWithSchemata#rime-%E4%B8%AD%E7%9A%84%E6%95%B8%E6%93%9A%E6%96%87%E4%BB%B6%E5%88%86%E4%BD%88%E5%8F%8A%E4%BD%9C%E7%94%A8)、[emoji 集成](https://github.com/rime/rime-emoji)、[模糊音设置](https://github.com/rime/home/wiki/CustomizationGuide#%E6%A8%A1%E7%B3%8A%E9%9F%B3)
+
 扩充词库：[自定义短语](https://gist.github.com/lotem/5440677)、[Rime 擴充詞庫](https://github.com/rime-aca/dictionaries)
 
 * [同步用户资料](https://github.com/rime/home/wiki/UserGuide#%E5%90%8C%E6%AD%A5%E7%94%A8%E6%88%B6%E8%B3%87%E6%96%99)：打开用户文件夹中的`installation.yaml`，将设备名称`installation_id`从长字符串修改为方便识别的名称，并在文件最下方添加`sync_dir: 'D:\Sync\RIME'`，此处为用户资料同步位置。注意：同步文件夹路径中不能出现中文。
