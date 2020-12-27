@@ -18,7 +18,7 @@ tags:
 
 之后尝试各类输入法，百度、讯飞、手心等依旧是键盘记录器，影子输入法开源但不够稳定，谷歌拼音停止更新，微软拼音词库收录慢且难以转移。唯有小狼毫开源，且方便多设备同步词库。
 
-小狼毫官网下载：https://dl.bintray.com/rime/weasel/weasel-0.14.3.0-installer.exe
+官网下载：https://dl.bintray.com/rime/weasel/weasel-0.14.3.0-installer.exe
 
 国内搬运：https://www.lanzoux.com/ipfdfglhs8f
 
@@ -43,25 +43,30 @@ SuperRime 词库 > BetterRime 词库 > Rime 擴充詞庫，词库越大错误收
 
 不建议安装「四叶草」等集成方案，而推荐以「朙月拼音·简化字」为基础定制你自己的输入法。这样即使出现 bug 也不会对你的输入法设置产生过大影响。小狼毫的魅力就在于定制、可控。
 
-### 常见问题
+## 常见问题
 * 开机后，输入法不能输出中文？
-  需手动打开程序文件夹中的`WeaselServer.exe`即可，默认位置为`C:\Program Files (x86)\Rime\weasel-0.14.3\WeaselServer.exe`。不要手动将`WeaselServer.exe`设为开机启动，否则程序容易报错。
+
+需手动打开程序文件夹中的`WeaselServer.exe`即可，默认位置为`C:\Program Files (x86)\Rime\weasel-0.14.3\WeaselServer.exe`。不要手动将`WeaselServer.exe`设为开机启动，否则程序容易报错。
   
 * 将用户文件夹置为同步文件夹，提示`有错误,请查看日志%TEMP%\rime.weasel.*.INFO`？
 
-  不要将用户文件夹完整置为同步文件夹，会导致进程冲突，日志中有提示`另一个程序正在使用此文件，进程无法访问`。
+不要将用户文件夹完整置为同步文件夹，会导致进程冲突，日志中有提示`另一个程序正在使用此文件，进程无法访问`。
+
 * 打错了字，之后就总在前排出现，如何删除错误「上屏」的词？
 
-   将选字光标移到要删除的词组上，再按下 Shift+Delete 或 Control+Delete。
+将选字光标移到要删除的词组上，再按下 Shift+Delete 或 Control+Delete。
 
 * 官方文档中的`%APPDATA%\Rime`是用户文档吗？为什么有时位置不同？
-  `%APPDATA%\Rime`是小狼毫默认的用户文档。如果在安装时修改了用户文档位置，右键点击任务栏小狼毫图标，选「用户文件夹」，会出现当前的位置，所有文档只需在这里修改。
+
+`%APPDATA%\Rime`是小狼毫默认的用户文档。如果在安装时修改了用户文档位置，右键点击任务栏小狼毫图标，选「用户文件夹」，会出现当前的位置，所有文档只需在这里修改。
   
 * emoji 按教程设置，但始终无法显示？
- 暂无解决方法。官方文档、三种集成词库都试过了，同样无法显示。特殊字符可使用 SuperRime 词库的 symbol 输出。
+
+暂无解决方法。官方文档、三种集成词库都试过了，同样无法显示。特殊字符可使用 SuperRime 词库的 symbol 输出。
 
 * SuperRime 词库安装后，无法完整触发特殊符号？
- SuperRime 词库自带的标点及特殊表情设置有问题。在`luna_pinyin_simp.custom.yaml`植入以下代码。
+
+SuperRime 词库自带的标点及特殊表情设置有问题。在`luna_pinyin_simp.custom.yaml`植入以下代码。
  ```yaml
  patch:
   #标点及特殊表情

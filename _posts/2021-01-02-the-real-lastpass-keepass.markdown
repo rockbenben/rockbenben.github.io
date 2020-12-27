@@ -2,37 +2,33 @@
 layout:       post
 title:        "替代 Lastpass - keepass"
 subtitle:     ""
-date:         2019-10-2
+date:         2021-01-2
 author:       "Benson"
 header-img:   img/post-bg-20180108.jpg
 header-mask:  0.3
 catalog:      true
 tags: 
     - keepass
+	- 密码管理
 ---
 # 替代 Lastpass - keepass
 
-Lastpass 自动输入功能持续变弱，决定加入自动输入超强的 Keepass。Keepass 原版比 keepassxc 复杂，但配置性更强。
+Lastpass 用了 5 年，但自动输入持续出现问题，替换为自动输入超强的 Keepass。
+官网下载：https://keepass.info/download.html
+懒人包下载：
+懒人包为绿色版，覆盖常用插件，无需设置直接使用。
 
 ## 配置
 
 * 最小化到系统盘
-
 * 关闭按钮最小化主窗口
-
 * 自动输入规则修改`^{SPACE}{CLEARFIELD}{USERNAME}{TAB}{PASSWORD}{ENTER}`
-^{SPACE} 即 Ctrl+Space，可关闭或启用当前输入法。关闭输入法后，默认为美式键盘输入。Ctrl+Space 需在输入法编辑状态下才能生效，而密码区都禁用输入法编辑。因此输入密码完成后，输入法有可能未启动，请按 Ctrl+Space 重新启用输入法。
+
+  ^{SPACE} 即 Ctrl+Space，可关闭或启用当前输入法。关闭输入法后，默认为美式键盘输入。Ctrl+Space 需在输入法编辑状态下才能生效，而密码区都禁用输入法编辑。因此输入密码完成后，输入法有可能未启动，请按 Ctrl+Space 重新启用输入法。
 
 
-## 常见问题
-1. 一个密码能不能同时匹配多个链接？
-
-   不能，但可以在「高级-标记 」上添加多个表格，用英文的逗号隔开。标记在全局匹配中可用于搜索。
-
-2. 一个链接有多个账户密码，怎么默认第一个选择？
-
-   不能默认第一个选择，但通过插件 keepasshttp、keepassnatmsg，按 username 或 title 排序。
 ## 必备插件
+keepass 的主要功能都由插件实现，装了下列插件才能实现密码的
 
 ### [keepasshttp](https://github.com/pfn/keepasshttp/)
 插件下载：https://raw.github.com/pfn/keepasshttp/master/KeePassHttp.plgx
@@ -82,6 +78,19 @@ WebAutoType 是很多人推荐的插件，其在热键后可以自动载入当�
 ### [Yet Another Favicon Downloader](https://keepass.info/plugins.html#yafd)
 自动匹配下载网站图标，但会巨幅增加数据库大小。对美观不是非常在意的话，不推荐 。
 
-参考：
+## 常见问题
+1. 一个密码能不能同时匹配多个链接？
+
+	不能，但可以在「高级-标记 」上添加多个表格，用英文的逗号隔开。标记在全局匹配中可用于搜索。
+
+2. 一个链接有多个账户密码，怎么默认第一个选择？
+
+	不能默认第一个选择，但通过插件 keepasshttp、keepassnatmsg，按 username 或 title 排序。
+	
+3. Keepassxc 比 Keepass 界面更好，浏览器插件有原生支持，为什么不推荐 Keepassxc？
+
+	Keepassxc 是 Keepass 的衍生版，Keepass 虽比 Keepassxc 复杂，但配置性更强。长期使用，个人推荐 Keepass 原版。
+
+### 参考：
 
 * [Keepass 教程之二——完美的通用自动输入规则](https://blog.csdn.net/SingWarm/article/details/90669580)
