@@ -1,7 +1,7 @@
 ---
 layout:       post
 title:        "最后一个密码管理器－keepass"
-subtitle:     "替代Lastpass"
+subtitle:     ""
 date:         2021-01-2
 author:       "Benson"
 header-img:   img/post-bg-20180108.jpg
