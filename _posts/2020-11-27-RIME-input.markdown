@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "小狼毫 3 分钟入门及进阶指南"
+title:        "小狼毫3分钟入门及进阶指南"
 subtitle:     "终极输入法"
 date:         2020-11-27
 author:       "Benson"

@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        ""
+title:        "真·DPC_WATCHDOG_VIOLATION 蓝屏解决方案"
 subtitle:     ""
 date:         2020-10-25
 author:       "Benson"

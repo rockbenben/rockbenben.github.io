@@ -1,7 +1,7 @@
 ---
 layout:       post
-title:        "替代 Lastpass - keepass"
-subtitle:     ""
+title:        "最后一个密码管理器－keepass"
+subtitle:     "替代Lastpass"
 date:         2021-01-2
 author:       "Benson"
 header-img:   img/post-bg-20180108.jpg
@@ -11,7 +11,7 @@ tags:
     - keepass
 	- 密码管理
 ---
-# 替代 Lastpass - keepass
+# 最后一个密码管理器－keepass
 
 Lastpass 用了 5 年，但自动输入持续出现问题，替换为自动输入超强的 Keepass。
 官网下载：https://keepass.info/download.html
