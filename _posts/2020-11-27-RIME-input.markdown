@@ -45,26 +45,33 @@ SuperRime 词库 > BetterRime 词库 > Rime 擴充詞庫，词库越大错误收
 
 ## 常见问题
 * **开机后，输入法不能输出中文？**
-需手动打开程序文件夹中的`WeaselServer.exe`即可，默认位置为`C:\Program Files (x86)\Rime\weasel-0.14.3\WeaselServer.exe`。不要手动将`WeaselServer.exe`设为开机启动，否则程序容易报错。
-不愿手动启动，可以使用 [WeaselServerAutostart](https://github.com/rockbenben/rime-WeaselServer) 脚本工具。将脚本放置于小狼毫「程序文件夹」内，并生成桌面快捷方式。将快捷方式移动至开机启动目录，Win10 默认位置为`%AppData%\Microsoft\Windows\Start Menu\Programs\Startup`。脚本国内下载：https://wwx.lanzoux.com/if3znkka01g
+
+  需手动打开程序文件夹中的`WeaselServer.exe`即可，默认位置为`C:\Program Files (x86)\Rime\weasel-0.14.3\WeaselServer.exe`。不要手动将`WeaselServer.exe`设为开机启动，否则程序容易报错。
+  不愿手动启动，可以使用 [WeaselServerAutostart](https://github.com/rockbenben/rime-WeaselServer) 脚本工具。将脚本放置于小狼毫「程序文件夹」内，并生成桌面快捷方式。将快捷方式移动至开机启动目录，Win10 默认位置为`%AppData%\Microsoft\Windows\Start Menu\Programs\Startup`。脚本国内下载：https://wwx.lanzoux.com/if3znkka01g
 
 * **将用户文件夹置为同步文件夹，提示`有错误,请查看日志%TEMP%\rime.weasel.*.INFO`？**
-不要将用户文件夹完整置为同步文件夹，会导致进程冲突，日志中有提示`另一个程序正在使用此文件，进程无法访问`。出错后，关闭任务管理器中的`WeaselServer.exe`进程，然后重新执行小狼毫算法服务。
+
+  不要将用户文件夹完整置为同步文件夹，会导致进程冲突，日志中有提示`另一个程序正在使用此文件，进程无法访问`。出错后，关闭任务管理器中的`WeaselServer.exe`进程，然后重新执行小狼毫算法服务。
 
 * **中文输入法的候选框闪烁，无法显示候选词？**
-排除键盘硬件问题，拔除或更换键盘，确认问题是否复现。Word 2016下候选框闪烁参考 [issue 228](https://github.com/rime/weasel/issues/228)。
+
+  排除键盘硬件问题，拔除或更换键盘，确认问题是否复现。Word 2016下候选框闪烁参考 [issue 228](https://github.com/rime/weasel/issues/228)。
 
 * **打错了字，之后就总在前排出现，如何删除错误「上屏」的词？**
-将选字光标移到要删除的词组上，再按下 Shift+Delete 或 Control+Delete。
+
+  将选字光标移到要删除的词组上，再按下 Shift+Delete 或 Control+Delete。
 
 * **官方文档中的`%APPDATA%\Rime`是用户文档吗？为什么有时位置不同？**
-`%APPDATA%\Rime`是小狼毫默认的用户文档。如果在安装时修改了用户文档位置，右键点击任务栏小狼毫图标，选「用户文件夹」，会出现当前的位置，所有文档只需在这里修改。
+
+  `%APPDATA%\Rime`是小狼毫默认的用户文档。如果在安装时修改了用户文档位置，右键点击任务栏小狼毫图标，选「用户文件夹」，会出现当前的位置，所有文档只需在这里修改。
 
 * **emoji 按教程设置，但始终无法显示？**
-暂无解决方法。官方文档、三种集成词库都试过了，同样无法显示。特殊字符可使用 SuperRime 词库的 symbol 输出。
+
+  暂无解决方法。官方文档、三种集成词库都试过了，同样无法显示。特殊字符可使用 SuperRime 词库的 symbol 输出。
 
 * **SuperRime 词库安装后，无法完整触发特殊符号？**
-SuperRime 词库自带的标点及特殊表情设置有问题。在`luna_pinyin_simp.custom.yaml`植入以下代码。
+
+  SuperRime 词库自带的标点及特殊表情设置有问题。在`luna_pinyin_simp.custom.yaml`植入以下代码。
  ```yaml
  patch:
   #标点及特殊表情
