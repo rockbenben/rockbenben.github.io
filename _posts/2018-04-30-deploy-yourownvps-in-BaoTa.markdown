@@ -2,7 +2,7 @@
 layout:       post
 title:        "新手建站-宝塔面板"
 subtitle:     ""
-date:         2018-4-30
+date:         2018-04-30
 author:       "Benson"
 header-img:   img/post-bg-20180108.jpg
 header-mask:  0.3
@@ -12,7 +12,6 @@ tags:
     - VPS
     - 宝塔面板
 ---
-# 新手建站-宝塔面板
 新手建站最大的痛苦就是代码太多，无法轻松管理。
 
 我使用了国产的宝塔面板，可以在可视界面中为服务器安装应用、同步文件、定期执行代码、管理服务。

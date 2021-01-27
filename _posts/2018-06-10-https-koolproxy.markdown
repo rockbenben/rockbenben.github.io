@@ -10,8 +10,6 @@ catalog:      true
 tags:
     - koolproxy
 ---
-# koolproxy 无法下载 https 证书？
-
 koolproxy 是可以运行在路由器上的广告屏蔽软件，跟其他最大的区别就是支持 https , 能有效屏蔽最新的视频应用广告（播个10分钟视频，广告 60秒。。。）
 
 为了屏蔽 https 广告，koolproxy 需要在每台设备上安装 https 证书。但我访问证书地址 110.110.110.110 时，却被提示无法访问。

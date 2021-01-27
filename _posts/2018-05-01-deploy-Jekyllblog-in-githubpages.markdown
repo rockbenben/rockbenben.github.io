@@ -1,8 +1,8 @@
 ---
 layout:       post
-title:        "Jekyll 篇一：3分钟搭建 Github Pages 博客"
+title:        "Jekyll 篇一：3 分钟搭建 Github Pages 博客"
 subtitle:     ""
-date:         2018-5-1
+date:         2018-05-01
 author:       "Benson"
 header-img:   img/post-bg-20180108.jpg
 header-mask:  0.3
@@ -12,8 +12,6 @@ tags:
     - Jekyll
     - Github
 ---
-# Jekyll 篇一：3分钟搭建 Github Pages 博客
-
 一直都想建立自己的个人博客，重装过 N 次 WordPress，又因为种种原因而放弃。偶然看到了[Hux 的 Jekyll 模板](https://github.com/Huxpro/huxpro.github.io)，被漂亮的设计给迷住了，开始了 Jekyll 之路。
 
 Github 标配 Jekyll 环境，并提供了免费空间和流量，入坑从这开始。

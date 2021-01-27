@@ -2,16 +2,14 @@
 layout:       post
 title:        "国产化妆品扒皮"
 subtitle:     ""
-date:         2019-10-4
+date:         2019-10-04
 author:       "Benson"
 header-img:   img/post-bg-20180108.jpg
 header-mask:  0.3
 catalog:      true
 tags:
-    - keepass
+    - 化妆品
 ---
-# 国产化妆品扒皮
-
 国产化妆品坑太多，专门写篇来记录。
 
 第一次看到的品牌一定要去「国家食品药品监督管理总局」进行查询，查询入口分别为 [国产特殊用途化妆品](http://app1.sfda.gov.cn/datasearchcnda/face3/base.jsp?tableId=68&tableName=TABLE68&title=%B9%FA%B2%FA%CC%D8%CA%E2%D3%C3%CD%BE%BB%AF%D7%B1%C6%B7&bcId=152904508268669766289794835880) 和 [国产非特殊用途化妆品](http://125.35.6.80:8181/ftban/fw.jsp)。

@@ -11,9 +11,6 @@ tags:
     - 蓝屏
     - DPC_WATCHDOG_VIOLATION
 ---
-
-# 真·DPC_WATCHDOG_VIOLATION 蓝屏解决方案
-
 DPC_WATCHDOG_VIOLATION 多为硬件驱动出现问题。当驱动大规模报错时，厂家会更新并推送解决方法。所以，不要继续尝试其他人的解决方案，你的问题是独一无二的。分析 dmp 日志才是能百分百解决蓝屏的方法。
 
 ## 分析 dmg 日志

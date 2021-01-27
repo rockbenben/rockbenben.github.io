@@ -2,7 +2,7 @@
 layout:       post
 title:        "客厅、书房、卧室，任意收看 IPTV 直播！（上海电信）"
 subtitle:     ""
-date:         2018-6-19
+date:         2018-06-19
 author:       "Benson"
 header-img:   img/post-bg-20180108.jpg
 header-mask:  0.3
@@ -10,8 +10,6 @@ catalog:      true
 tags:
     - IPTV
 ---
-# 客厅、书房、卧室，任意收看 IPTV 直播！（上海电信）
-
 电视 + 机顶盒 + IPTV 盒，家里的遥控器越来越多。为了摆脱众多的遥控器，开始使用 lucifersun 的直播源（原理上**仅限上海电信**）。
 
 lucifersun 抓取了[上海电信 IPTV 视频回放源](https://github.com/lucifersun/China-Telecom-ShangHai-IPTV-list)。借助直播源地址，我们可以在 PC 、电视、手机上直接看电视直播。

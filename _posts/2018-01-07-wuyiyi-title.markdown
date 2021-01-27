@@ -14,7 +14,7 @@ tags:
 
 1. 学习 markdown 语法，参考我在知乎写的[攻略](https://zhuanlan.zhihu.com/p/31784246)。
 
-2. 安装md编辑器--**Yu Writer**,并对「.md」和「.markdown」格式关联
+2. 安装md编辑器－**Typora** 或 **Yu Writer**,并对「.md」和「.markdown」格式关联
 
 3. 开动。
 

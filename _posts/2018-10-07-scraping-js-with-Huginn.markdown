@@ -12,12 +12,9 @@ tags:
     - RSS
     - PhantomJs Cloud
 ---
-# RSS 进阶篇：Huginn - 真·为任意网页定制 RSS 源（PhantomJs 抓取）
-
 烧制网页RSS源主要有**FEED43**和**Huginn**两种方法。
 1. FEED43：简单免费，六小时抓取一次，每次抓取20条静态页面。使用攻略-[RSS 入门篇：FEED43&FeedEx-为静态网页定制 RSS 源](https://zhuanlan.zhihu.com/p/26511654)
 2. Huginn：自由度高，可设定**抓取频率、内容结构、js结果、输出样式**等；需要搭建服务器，学习Huginn抓取规则
-
 
 ### **Huginn 准备工作**：
 
@@ -31,7 +28,7 @@ tags:
 ### Huginn + PhantomJs Cloud 全网页抓取
 
 #### 一、Phantom Js Cloud API key 获取
-注册 [PhantomJs Cloud](https://phantomjscloud.com/) ,然后将 API key 保存在 Huginn 的 Credentials 中。
+注册 [PhantomJs Cloud](https://phantomjscloud.com/) ,然后将 API key 保存在 Huginn 的 Credentials 中。免费版每天限制抓取 500 次页面，需求不大可建立多个账号使用不同 API key，足够个人使用。
 ![](http://tc.seoipo.com/20181006010447.png)
 
 新建 Huginn 任务组 Scenario 「国内应急新闻」，抓取链接 http://www.cneb.gov.cn/guoneinews/
