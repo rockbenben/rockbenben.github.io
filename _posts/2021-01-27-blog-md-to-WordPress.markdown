@@ -21,7 +21,7 @@ tags:
 
 ### 迁移步骤
 这里迁移的是 jekyll 的 [Hux blog 模板](https://github.com/Huxpro/huxpro.github.io)，Hexo 或其他博客也可以参考微调。
-1. 修改`_config.yml`文件中的`paginate: 100`，该项表明一页展示几篇文章。后续我们需要在首页展示所有文章，因此将该值修改为 100。
+1. 修改`feed.xml`文件中的`{% for post in site.posts limit:100 %}`，该项为 rss最低生成量，我们导出所有文章，因此将该值修改为 100。
 2. 将博客导出为 rss，如`xxx.com/feed.xml`，`xxx.com`为你的博客地址。如果 feed.xml 不存在，可尝试`rss.xml`或`atom.xml`。
 3. 登录 WordPress 后台，工具－导入－安装 RSS 导入器，然后导入`feed.xml`。
 
