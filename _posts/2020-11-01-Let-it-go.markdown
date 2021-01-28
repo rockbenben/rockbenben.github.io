@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "双十一解毒清单：10 件不值得买的「毒草」"
+title:        "断舍离：10 件不值得买的「毒草」"
 subtitle:     ""
 date:         2020-11-01
 author:       "Benson"

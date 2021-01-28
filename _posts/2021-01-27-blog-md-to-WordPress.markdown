@@ -11,7 +11,6 @@ tags:
     - blog
     - WordPress
 ---
-
 2005 年开始在 MSN space 写博客，期间配合 Google Sidewiki(短命) 记录感想。六年后，MSN space 关闭 ，旧博客被动转移到 WordPress 托管，暂停使用博客。
 
 2018 年偶尔接触到 jekyll，被其简洁的界面和便捷性打动，博客复活。本地用 markdown 编辑排版，同步 github 发布，博客方向则从感想记录转移到知识输出。
@@ -22,8 +21,8 @@ jekyll 博客用着太舒服，不知不觉就用了三年。但随着文章越�
 ### 迁移步骤
 这里迁移的是 jekyll 的 [Hux blog 模板](https://github.com/Huxpro/huxpro.github.io)，Hexo 或其他博客也可以参考微调。
 1. 修改`feed.xml`文件中的`{% for post in site.posts limit:100 %}`，该项为 rss最低生成量，我们导出所有文章，因此将该值修改为 100。如果 feed.xml 不存在，可尝试`rss.xml`或`atom.xml`。
-2. 将博客导出为 rss，如`xxx.com/feed.xml`，`xxx.com`为你的博客地址。
-3. 登录 WordPress 后台，工具－导入－安装插件 **FeedWordPress** RSS 导入器，然后导入`feed.xml`。自带 RSS 导入器使用报错，因此不推荐。
+2. 登录 WordPress 后台，工具－导入－安装并启用插件 **FeedWordPress** 。自带 RSS 导入器许久不更新，极易报错，不推荐。
+3. 后台－Syndication－添加 rss 源如`xxx.com/feed.xml`，`xxx.com`为你的博客地址。然后导入`feed.xml`。
 4. 删除 Syndicated Sites 并保存文章，如此你才能修改文章。
 
 参考资料：
