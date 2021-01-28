@@ -16,14 +16,15 @@ tags:
 2018 年偶尔接触到 Jekyll，被其简洁的界面和便捷性打动，博客复活。本地用 markdown 编辑排版，同步 github 发布，博客方向则从感想记录转移到知识输出。
 
 Jekyll 用着太舒服，不知不觉就过了三年。但随着文章越来越多，修改也愈加困难，甚至逐渐习惯只更新专栏，而将博客仅作初版发布。Jekyll 已经失去了知识记录参考的初衷，决定将博客从  Jekyll 迁移到 WordPress，文章的初次排版编辑依旧使用 markdown。
-
 ![](http://tc.seoipo.com/20210128124408.png)
 
 ## 迁移步骤
 这里迁移的是 Jekyll 的 [Hux blog 模板](https://github.com/Huxpro/huxpro.github.io)，Hexo 或其他 Jekyll 博客可以参照微调。
 
 1. 复制博客主目录下的`feed.xml`文件，重命名为`feed-wp.xml`。如果目录内不存在`feed.xml`，可尝试`rss.xml`或`atom.xml`。
+
 2. 修改`feed-wp.xml`文件中的`for post in site.posts limit:100 %`，该项为 rss最低生成量，我们导出所有文章，因此将该值修改为 100。
+
 3. 参照下方内容，按 WordPress 所需 rss 格式修改`feed-wp.xml`文件的`item`部分。title、pubdate、content、category 的基本格式需完全一致。
 
     ```xml
@@ -34,10 +35,17 @@ Jekyll 用着太舒服，不知不觉就过了三年。但随着文章越来越�
         <category>标签</category>
     </item>
     ```
+    
 4. 登录 WordPress 后台，工具－导入－安装并启用插件 **FeedWordPress** 。自带 RSS 导入器许久不更新，极易报错，不推荐。
+
 5. 后台－Syndication－添加 rss 源如`xxx.com/feed-wp.xml`，`xxx.com`为你的博客地址。然后导入`feed-wp.xml`。
 	![](http://tc.seoipo.com/20210128120956.gif)
+	
 6. 删除 Syndicated Sites 并保存文章，如此你才能修改文章。
 
-参考资料：
+
+**参考资料**：
+
 * [有没有办法把Markdown写的博客迁移到wordpress？](https://www.v2ex.com/t/73385)
+* [WordPress从RSS导入文章](https://www.yiyult.com/201903155699.html)
+* [有关WordPress的Rss导入指南](https://www.cnblogs.com/u0mo5/p/4100927.html)
