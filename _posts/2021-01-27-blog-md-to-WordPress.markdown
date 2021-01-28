@@ -16,9 +16,10 @@ tags:
 2018 年偶尔接触到 jekyll，被其简洁的界面和便捷性打动，博客复活。本地用 markdown 编辑排版，同步 github 发布，博客方向则从感想记录转移到知识输出。
 
 jekyll 博客用着太舒服，不知不觉就用了三年。但随着文章越来越多，修改也愈加困难，甚至逐渐习惯更新专栏，博客仅作发布作用。jekyll 博客失去了知识记录参考的初衷。为了方便后续管理，决定将博客从 jekyll 迁移到 WordPress，后期本地 markdown 仅做初次排版编辑作用。
+
 ![](http://tc.seoipo.com/20210127192533.png)
 
-### 迁移步骤
+## 迁移步骤
 这里迁移的是 jekyll 的 [Hux blog 模板](https://github.com/Huxpro/huxpro.github.io)，Hexo 或其他博客也可以参考微调。
 1. 修改`feed.xml`文件中的`{% for post in site.posts limit:100 %}`，该项为 rss最低生成量，我们导出所有文章，因此将该值修改为 100。如果 feed.xml 不存在，可尝试`rss.xml`或`atom.xml`。
 2. 登录 WordPress 后台，工具－导入－安装并启用插件 **FeedWordPress** 。自带 RSS 导入器许久不更新，极易报错，不推荐。
