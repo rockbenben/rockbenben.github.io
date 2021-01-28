@@ -9,7 +9,7 @@ header-mask:  0.3
 catalog:      true
 tags: 
     - keepass
-	- 密码管理
+    - 密码管理
 ---
 
 Lastpass 用了 5 年，但自动输入持续出现问题，替换为自动输入超强的 KeePass。
