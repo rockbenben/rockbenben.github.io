@@ -8,9 +8,9 @@ header-img:   img/post-bg-20180108.jpg
 header-mask:  0.3
 catalog:      true
 tags: 
+    - 原则
     - 批评与自我批评
 ---
-
 短暂试验了「批评与自我批评」后，感受到巨大的能量，开始将党章的要求逐渐适应到个人生活中。
 
 ```
