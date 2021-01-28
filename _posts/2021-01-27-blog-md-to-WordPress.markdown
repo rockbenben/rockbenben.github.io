@@ -15,9 +15,9 @@ tags:
 
 2018 年偶尔接触到 Jekyll，被其简洁的界面和便捷性打动，博客复活。本地用 markdown 编辑排版，同步 github 发布，博客方向则从感想记录转移到知识输出。
 
-Jekyll 用着太舒服，不知不觉就过了三年。但随着文章越来越多，修改也愈加困难，甚至逐渐习惯只更新专栏，而将博客仅作初版发布。Jekyll 已经失去了知识记录参考的初衷，决定将博客从  Jekyll 迁移到 WordPress，文章的初级排版编辑继续使用 markdown。
+Jekyll 用着太舒服，不知不觉就过了三年。但随着文章越来越多，修改也愈加困难，甚至逐渐习惯只更新专栏，而将博客仅作初版发布。Jekyll 已经失去了知识记录参考的初衷，决定将博客从  Jekyll 迁移到 WordPress，文章的初次排版编辑依旧使用 markdown。
 
-![](http://tc.seoipo.com/20210127192533.png)
+![](http://tc.seoipo.com/20210128124408.png)
 
 ## 迁移步骤
 这里迁移的是 Jekyll 的 [Hux blog 模板](https://github.com/Huxpro/huxpro.github.io)，Hexo 或其他 Jekyll 博客可以参照微调。
