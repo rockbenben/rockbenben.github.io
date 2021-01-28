@@ -25,19 +25,20 @@ Jekyll 用着太舒服，不知不觉就过了三年。但随着文章越来越�
 1. 复制博客主目录下的`feed.xml`文件，重命名为`feed-wp.xml`。如果目录内不存在`feed.xml`，可尝试`rss.xml`或`atom.xml`。
 2. 修改`feed-wp.xml`文件中的`for post in site.posts limit:100 %`，该项为 rss最低生成量，我们导出所有文章，因此将该值修改为 100。
 3. 参照下方内容，按 WordPress 所需 rss 格式修改`feed-wp.xml`文件的`item`部分。title、pubdate、content 的定义格式需完全一致。
-```
-<item>
-    <title>{{ post.title | xml_escape }}</title>
-    <pubdate>{{ post.date | date_to_rfc822 }}</pubdate>
-    <content:encoded>{{ post.content | xml_escape }}</content:encoded>
-    {% for tag in post.tags %}
-    <category>{{ tag | xml_escape }}</category>
-    {% endfor %}
-    {% for cat in post.categories %}
-    <category>{{ cat | xml_escape }}</category>
-    {% endfor %}
-</item>
-```
+
+    ```xml
+    <item>
+        <title>{{ post.title | xml_escape }}</title>
+        <pubdate>{{ post.date | date_to_rfc822 }}</pubdate>
+        <content:encoded>{{ post.content | xml_escape }}</content:encoded>
+        {% for tag in post.tags %}
+        <category>{{ tag | xml_escape }}</category>
+        {% endfor %}
+        {% for cat in post.categories %}
+        <category>{{ cat | xml_escape }}</category>
+        {% endfor %}
+    </item>
+    ```
 4. 登录 WordPress 后台，工具－导入－安装并启用插件 **FeedWordPress** 。自带 RSS 导入器许久不更新，极易报错，不推荐。
 5. 后台－Syndication－添加 rss 源如`xxx.com/feed-wp.xml`，`xxx.com`为你的博客地址。然后导入`feed-wp.xml`。
 	![](http://tc.seoipo.com/20210128120956.gif)
