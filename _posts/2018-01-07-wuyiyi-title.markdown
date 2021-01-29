@@ -8,7 +8,7 @@ header-img:   img/post-bg-20180108.jpg
 header-mask:  0.3
 catalog:      true
 tags:
-    - markdown
+    - MarkDown
 ---
 # 怎么用 MarkDown 写博客？
 

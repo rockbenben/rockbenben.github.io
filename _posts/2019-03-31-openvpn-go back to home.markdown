@@ -8,7 +8,7 @@ header-img:   img/post-bg-20180108.jpg
 header-mask:  0.3
 catalog:      true
 tags:
-    - openvpn
+    - OpenVPN
     - 内网穿透
 ---
 有时在外面需要访问家里的文件，或直接利用家中网络设置翻墙。为此，利用路由器 OpenVPN 搭建了一条回家的路。

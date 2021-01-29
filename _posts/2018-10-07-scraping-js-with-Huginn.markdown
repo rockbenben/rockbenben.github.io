@@ -9,8 +9,7 @@ header-mask:  0.3
 catalog:      true
 tags:
     - Huginn
-    - RSS
-    - PhantomJs Cloud
+    - rss
 ---
 烧制网页RSS源主要有**FEED43**和**Huginn**两种方法。
 1. FEED43：简单免费，六小时抓取一次，每次抓取20条静态页面。使用攻略-[RSS 入门篇：FEED43&FeedEx-为静态网页定制 RSS 源](https://zhuanlan.zhihu.com/p/26511654)

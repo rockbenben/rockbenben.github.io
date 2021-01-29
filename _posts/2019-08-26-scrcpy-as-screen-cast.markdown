@@ -9,6 +9,7 @@ header-mask:  0.3
 catalog:      true
 tags:
     - scrcpy
+    - 投屏
 ---
 **scrcpy** 是免费开源的投屏软件，支持将安卓手机屏幕投放在 Windows、macOS、GNU/Linux 上，并可直接借助鼠标在投屏窗口中进行交互和录制。
 

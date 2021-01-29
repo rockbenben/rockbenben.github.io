@@ -9,7 +9,7 @@ header-mask:  0.3
 catalog:      true
 tags:
     - Audition
-    - 音频剪辑
+    - 音频
 ---
 很久没剪音频了，突然被朋友拜托，才发现 Audition 剪切音频有多非人性，操作跟 10 年前的软件相比，没任何进步。
 

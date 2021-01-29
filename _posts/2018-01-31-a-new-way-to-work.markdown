@@ -9,7 +9,7 @@ header-mask:  0.3
 catalog:      true
 tags:
     - Huginn
-    - RSS
+    - rss
 ---
 
 > 机器人会取代你工作！

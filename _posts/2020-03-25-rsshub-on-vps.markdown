@@ -9,7 +9,7 @@ header-mask:  0.3
 catalog:      true
 tags:
     - rss
-    - rsshub
+    - RSSHub
 ---
 RSSHub 使用非常简单，但随着使用者增多，微博、知乎加大了反爬限制。目前大量源都无法直接使用，只能自建 RSSHub 来解决稳定性。部署前，准备好**域名和服务器**。
 

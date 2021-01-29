@@ -8,8 +8,8 @@ header-img:   img/post-bg-20180108.jpg
 header-mask:  0.3
 catalog:      true
 tags:
-    - 建站
     - Jekyll
+    - 建站
 ---
 
 Github 墙得太厉害，就想在服务器上自建 Jekyll 环境，用上 Travis CI 和 Docker 后才发现完全没必要。。

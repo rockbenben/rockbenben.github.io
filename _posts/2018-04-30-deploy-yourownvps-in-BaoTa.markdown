@@ -8,9 +8,8 @@ header-img:   img/post-bg-20180108.jpg
 header-mask:  0.3
 catalog:      true
 tags:
-    - 建站
-    - VPS
     - 宝塔面板
+    - 建站
 ---
 新手建站最大的痛苦就是代码太多，无法轻松管理。
 

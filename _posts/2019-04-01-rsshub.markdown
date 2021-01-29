@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "RSS 速成篇：rsshub 捡现成的轮子"
+title:        "RSS 速成篇：RSSHub 捡现成的轮子"
 subtitle:     ""
 date:         2019-04-01
 author:       "Benson"
@@ -9,7 +9,7 @@ header-mask:  0.3
 catalog:      true
 tags:
     - rss
-    - rsshub
+    - RSSHub
 ---
 RSS 使用已经介绍了 feed43 和 Huginn，但这些工具或需要学习，或需要硬件。与之相比，RSSHub 有着成熟的配置，可以直接使用。
 
