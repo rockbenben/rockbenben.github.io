@@ -14,7 +14,7 @@ layout: null
     {% for post in site.posts limit:100 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
-        <pubdate>{{ post.date | date_to_rfc822 }}</pubdate>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <content:encoded>{{ post.content | xml_escape }}</content:encoded>
         {% for tag in post.tags %}
         <category>{{ tag | xml_escape }}</category>

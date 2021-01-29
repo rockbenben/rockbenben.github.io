@@ -30,7 +30,7 @@ Jekyll 用着太舒服，不知不觉就过了三年。但随着文章越来越�
     ```xml
     <item>
         <title>标题</title>
-        <pubdate>发布日期</pubdate>
+        <pubDate>发布日期</pubDate>
         <content:encoded>内容</content:encoded>
         <category>标签</category>
     </item>
