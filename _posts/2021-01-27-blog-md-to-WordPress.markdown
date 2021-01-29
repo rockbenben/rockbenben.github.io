@@ -25,9 +25,11 @@ Jekyll 用着太舒服，不知不觉就过了三年。但随着文章越来越�
 
 2. 修改`feed-wp.xml`文件中的`for post in site.posts limit:100 %`，该项为 rss最低生成量，我们导出所有文章，因此将该值修改为 100。
 
-3. 参照下方内容，按 WordPress 所需 rss 格式修改`feed-wp.xml`文件的`item`部分。title、pubdate、content、category 的基本格式需完全一致，否则 xml 格式容易报错。
+3. 参照下方内容，按 WordPress 所需 rss 格式修改`feed-wp.xml`文件的`item`部分，并在文件顶部的`<rss>`元素内添加`xmlns:content="http://purl.org/rss/1.0/modules/content/"`，避免 xml 格式报错。
 
     ```xml
+    <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    ……
     <item>
         <title>标题</title>
         <pubDate>发布日期</pubDate>
@@ -41,12 +43,13 @@ Jekyll 用着太舒服，不知不觉就过了三年。但随着文章越来越�
 5. 后台－Syndication－添加 rss 源如`xxx.com/feed-wp.xml`，`xxx.com`为你的博客地址。然后导入`feed-wp.xml`。
 	![](http://tc.seoipo.com/20210128120956.gif)
 	
-6. 删除 Syndicated Sites 并保存文章，如此你才能修改文章。
-
-
 
 **参考资料**：
 
 * [有没有办法把Markdown写的博客迁移到wordpress？](https://www.v2ex.com/t/73385)
+
 * [WordPress从RSS导入文章](https://www.yiyult.com/201903155699.html)
+
 * [有关WordPress的Rss导入指南](https://www.cnblogs.com/u0mo5/p/4100927.html)
+
+* [How to create <content:encoded> in RSS](https://stackoverflow.com/questions/33212592/how-to-create-contentencoded-in-rss)
