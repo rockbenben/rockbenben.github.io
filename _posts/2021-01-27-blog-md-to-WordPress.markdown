@@ -25,7 +25,7 @@ Jekyll 用着太舒服，不知不觉就过了三年。但随着文章越来越�
 
 2. 修改`feed-wp.xml`文件中的`for post in site.posts limit:100 %`，该项为 rss最低生成量，我们导出所有文章，因此将该值修改为 100。
 
-3. 参照下方内容，按 WordPress 所需 rss 格式修改`feed-wp.xml`文件的`item`部分。title、pubdate、content、category 的基本格式需完全一致。
+3. 参照下方内容，按 WordPress 所需 rss 格式修改`feed-wp.xml`文件的`item`部分。title、pubdate、content、category 的基本格式需完全一致，否则容易报错。
 
     ```xml
     <item>
