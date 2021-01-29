@@ -12,7 +12,7 @@ layout: null
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
     {% for post in site.posts limit:100 %}
-      <item>
+	  <item>
         <title>{{ post.title | xml_escape }}</title>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <content:encoded>{{ post.content | xml_escape }}</content:encoded>
