@@ -34,7 +34,7 @@ Jekyll 用着太舒服，不知不觉就过了三年。但随着文章越来越�
         <title>标题</title>
         <pubDate>发布日期</pubDate>
         <content:encoded>内容</content:encoded>
-        <category domain="post_tag">标签</category>
+        <category>标签/目录(该项将全部转为目录，不建议对标签使用转换)</category>
     </item>
     ```
     
