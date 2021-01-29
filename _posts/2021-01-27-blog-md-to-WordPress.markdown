@@ -8,8 +8,8 @@ header-img:   img/post-bg-20180108.jpg
 header-mask:  0.3
 catalog:      true
 tags: 
-    - WordPress
     - Jekyll
+    - WordPress
 ---
 2005 年开始在 MSN space 写博客，期间配合 Google Sidewiki(短命) 记录感想。六年后，MSN space 关闭 ，旧博客被动转移到 WordPress 托管，暂停使用博客。
 
@@ -34,7 +34,7 @@ Jekyll 用着太舒服，不知不觉就过了三年。但随着文章越来越�
         <title>标题</title>
         <pubDate>发布日期</pubDate>
         <content:encoded>内容</content:encoded>
-        <category>标签/目录(该项将全部转为目录，不建议对标签使用转换)</category>
+        <category>标签/目录(该项将全部转为目录)</category>
     </item>
     ```
     
