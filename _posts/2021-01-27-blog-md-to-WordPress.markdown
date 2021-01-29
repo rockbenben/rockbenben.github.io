@@ -8,8 +8,8 @@ header-img:   img/post-bg-20180108.jpg
 header-mask:  0.3
 catalog:      true
 tags: 
-    - blog
     - WordPress
+    - Jekyll
 ---
 2005 年开始在 MSN space 写博客，期间配合 Google Sidewiki(短命) 记录感想。六年后，MSN space 关闭 ，旧博客被动转移到 WordPress 托管，暂停使用博客。
 
