@@ -10,6 +10,12 @@ catalog:      true
 tags:
     - IPTV
 ---
+**回放服务器已屏蔽公网IP的访问，仅限vlan85的B平面专网IP访问，本文章已失效！**
+
+参考：[电信公网疑似已屏蔽回放源IP · Issue #28](https://github.com/lucifersun/China-Telecom-ShangHai-IPTV-list/issues/28)
+
+\--------
+
 电视 + 机顶盒 + IPTV 盒，家里的遥控器越来越多。为了摆脱众多的遥控器，开始使用 lucifersun 的直播源（原理上**仅限上海电信**）。
 
 lucifersun 抓取了[上海电信 IPTV 视频回放源](https://github.com/lucifersun/China-Telecom-ShangHai-IPTV-list)。借助直播源地址，我们可以在 PC 、电视、手机上直接看电视直播。
@@ -21,7 +27,7 @@ lucifersun 的 IPTV 直播源比电视直播**慢 15 秒**，对普通用户来�
 
 ### 提取直播源列表：
 
-进入[上海电信IPTV视频流地址](http://htmlpreview.github.io/?https://raw.githubusercontent.com/lucifersun/China-Telecom-ShangHai-IPTV-list/master/iptvplayseek.html)。点击「生成 txt 内容」，然后复制下方的**视频直播源列表**，保存为 tv.txt，并将 tv.txt 文本转为 **ANSI 编码**（避免节目名会出现中文乱码）。
+进入[上海电信IPTV视频流地址](https://htmlpreview.github.io/?https://raw.githubusercontent.com/lucifersun/China-Telecom-ShangHai-IPTV-list/master/IPTV.html)。点击「生成 txt 内容」，然后复制下方的**视频直播源列表**，保存为 tv.txt，并将 tv.txt 文本转为 **ANSI 编码**（避免节目名会出现中文乱码）。
 
 ![](http://tc.seoipo.com/20180619170944.png)
 

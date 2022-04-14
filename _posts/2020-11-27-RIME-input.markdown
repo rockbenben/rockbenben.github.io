@@ -15,9 +15,9 @@ tags:
 
 之后尝试各类输入法，百度、讯飞、手心等依旧是键盘记录器，影子输入法开源但不够稳定，谷歌拼音停止更新，微软拼音词库收录慢且难以转移。唯有小狼毫开源，且方便多设备同步词库。
 
-官网下载：https://dl.bintray.com/rime/weasel/weasel-0.14.3.0-installer.exe
+官网下载：https://github.com/rime/weasel/releases/download/0.14.3/weasel-0.14.3.0-installer.exe
 
-国内搬运：https://www.lanzoux.com/ipfdfglhs8f
+国内搬运：https://wwi.lanzoui.com/iDyF4pdzmni
 
 安装时建议不要修改用户文件夹位置，后续定制输入法容易出错。
 
