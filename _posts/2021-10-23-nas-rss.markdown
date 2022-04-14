@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        " RSS 完结篇：节省千元服务费，RSSHub、Huginn 转移 NAS"
+title:        "RSS 完结篇：节省千元服务费，RSSHub、Huginn 转移 NAS"
 subtitle:     ""
 date:         2021-10-23
 author:       "Benson"

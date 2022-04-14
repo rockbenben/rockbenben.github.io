@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "物品的归属，"
+title:        "物品的归属"
 subtitle:     ""
 date:         2021-04-02
 author:       "Benson"
