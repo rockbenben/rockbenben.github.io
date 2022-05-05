@@ -29,8 +29,10 @@ tags:
 
 * github：原生 md，支持自定义
 * WordPress：不支持原生 md
-* 竹白：
+* 竹白：Newsletter，微信订阅，支持付费订阅
+* substack：Newsletter，微信订阅，支持付费订阅
 
+[WordPressXMLRPCTools](https://github.com/zhaoolee/WordPressXMLRPCTools)：用 Hexo 的方式管理 WordPress(使用 Github Actions 自动更新文章到 WordPress)
 
 
 **参考资料**：
